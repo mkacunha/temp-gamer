@@ -1,0 +1,49 @@
+.container {
+    max-width: 90%;
+}
+
+.flex {
+    margin: auto;
+    display: flex;
+}
+
+main.container.flex {
+    justify-content: space-around;
+}
+
+section.form {
+    width: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+section.picture {
+    width: 100px;
+}
+
+section.tel-date {
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.user-picture {
+    width: 100px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.col-1 {
+    width: 10%;
+}
+
+.col-5 {
+    width: 50%;
+}
+
+.col-10 {
+    width: 100%;
+}

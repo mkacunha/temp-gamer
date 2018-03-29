@@ -1,15 +1,91 @@
 .container {
     width: 80%;
-    height: 300px;
-    background-color: steelblue;
-    margin: auto;
+    margin: 50px auto;
+}
+
+.container>section {
+    margin: 20px 0;
+}
+
+.container-flex {
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
-.item {
+.container-game {
+    background-color: steelblue;
+    height: 300px;
+}
+
+.item-game {
     width: 10%;
     height: 40%;
     background-color: sandybrown;
+}
+
+.container-buttons {
+    background-color: gray;
+    height: 50px;
+}
+
+.btn {
+    border: 0px;
+    border: 0px;
+    cursor: pointer;
+    padding: 0 38px;
+    height: 40px;
+}
+
+.btn-color {
+    color: #e1eaf1;
+    background-color: #E91E63;
+}
+
+.modal-container {
+    display: none;
+}
+
+.modal-opacity {
+    opacity: 0.3;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+}
+
+.modal-content {
+    display: grid;
+    grid-template-rows: 60px 1fr 60px;
+    position: absolute;
+    width: 800px;
+    margin-left: -400px;
+    height: 300px;
+    left: 50%;
+    top: 10%;
+    background-color: #ffffff;
+}
+
+.modal-header {
+    background-color: #E91E63;
+}
+
+.modal-body {
+    background-color: aqua;
+}
+
+.modal-footer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.modal-footer>button {
+    margin: 0 10px;
+}
+
+.show-modal {
+    display: block;
 }

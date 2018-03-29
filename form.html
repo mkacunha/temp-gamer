@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="form.css" />
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
+</head>
+
+<body>
+
+    <main class="row">
+        <section class="col-md-5">
+            <section class="input-group col-5">
+                <label for="name">Nome</label>
+                <input type="text" id="name" name="name">
+            </section>
+
+            <section class="flex tel-date">
+                <section class="input-group">
+                    <label for="telefone">Telefone</label>
+                    <input type="text" name="telefone" id="telefone">
+                </section>
+
+                <section class="input-group">
+                    <label for="data">Data</label>
+                    <input type="datetime-local" name="data" id="data">
+                </section>
+            </section>
+        </section>
+
+        <section class="picture">
+            <img class="user-picture col-10" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAe1BMVEX///8CAgEwMDDt7e38/Pz5+fn29vbNzc1mZmYfHx6Li4vr6+uxsbGTk5PW1tarq6ve3t6AgICjo6O+vr45OTlaWlo/Pz7i4uIMDAsvLy9PT0/ExMQnJyebm5sZGRlfX19zc3NGRkZFRUUUFBRNTUxvb295eXmDg4OPj49p0nkaAAAFOElEQVR4nO2diX6iQAyHHVG8j3rWq7Vr1/b9n3Br0dWqwGQSSGLzPUH+P2ByTqhUDMMwDMMwDMMwDMMwDMMwDMMwfiFx9E2H2w564saovWy5C57fnkbjqMZtGAnRaj9xKay3XfXPc9zcpck7suzWuY0MpzZq5chLaEfclgbS9ZKXaNT4HIfv/gKda6247QUzgOg78MRtMZA9VKBzM1VvahMu0LmFogMnSKBzk5jbcF+ewgQ698ZtuScAL3HNltt2L+bhAp0bc1vvwxSjsKXgUxxjBDr3wW1/Pi84hU58soE4ZhLExzapuaA3wkObBlqgG3FryCYgHr2myq0hk3iNV+iG3Cqy6BMIdBtuFVm0KRROuVVksaRQuBOcRdUoBIr+EIc0CgX7C3RAkyA4rNnQKBR81ARWL65pye1nVGkUOrkKiQQ6uWkwlUKx7iKmUtjgVpJGRKVQbD3q8RWSZBYHutxK0iBTOOBWksbjK+xQKRT7HT7+SfP4Cslimj63kFSoFM65haTyTKRQbtkbX9JPkJs9PX4G3KNR+M6tI50RjcItt450kP3fE21uHemghhTOiA1LyWrech0+VbFNciv/L4XAhdxSG5G7EFzyJjpMBbctiHJgubnTF/GCQKHYevA3r3iBL9wasiHory25NWRDUG4T3AE+UMcnwZIjmgOgWxZ34VaQB/iexTVNbgV5oMcxBCcWR7AKJYfdCR84gTNu+/NZ4RR+ctufTx2nULqvOIDKEatyC4lnUK+pgssIX/mF39XY+8jOK04gZr3X3Lb7gYi+hUfd/wkfZ5dcg7okuLgvPiY9ETz9JXba64bAs0ZBxHYiMMGQn1acCSpI7eQ2t28JuuDV47YaRMjVEg0h6ZmAh6jrEVYqf8AKtXj7E+DQTfSNtbsAJ0/Wmg7SBGBPX+xYcAafEIGCR2jSqUEyYbmzelkAPIY2T3Fi6ytwosvZn6n7psIaSoj38XSKoocvcvBrCas8SI/49dom3GYi8NsY9SL4enoenkmUjjrwPXwPU40hW4JvvWbPbWgwvmsyWvoSi4Sad/Fb3+bLBP8VC4oqpZdASt8qz5oYVKpRGJqugIOYWhprJxrw6a+qpuNmPAPr+9ao5GvsY5ZF9cSXM4a9sMd35l3ymvZhj2LM+7CmXWT9e97Dbr38IXIgLKPCv5y3vMp5XfsFyDuKHAt4XTsjilWJ6TR5vWQ0wI9157PvM5VTayuii835TDYMbrLTK/btvGZa8tu6Qq20DmRTmgOJB1R72aDsS8mxoh5mfhTLtPDBsDrJDlYMs0I/yJhoaQKOWXHPcUC1uwTLtJjvsVFUbBbCnj6ci0tz755Q13WINl5QMqPs59RINgmQQzdGFXN5+DyWRCH5XMoRekuLJEmOyg2xYewokg6q9VbFQPBjGmle4hp024po9VOBbHECifbIFwquF0Dys4OiwWTGRIvyCwYzNcZtuyfhKaOIdNCD4J/vxHKDmStCDxuinzmUwCIsQPUegBVA2G4pgTlhKmEjqhxV32BCInCy7dylELIvU35EeslzgELZWdMN8AIj2frxkoBfStF0kh6A/0vY+8KLFMAlG2WfIXxdAdFK4BKBrrYh+KFoyUCXamhJnM5Aq27qDhpoMaMmqZXmCeyoIfv9VonA+m0aFcKiGn1HqXOvIIU6yog/WYAU6inRXABSqM8dOqBCgj+Ilw/I5Uvvqd0FlF0odPhAl68udzpgCn8gdb4kE5BCNT2ZS0AKl4uqOl70rF00DMMwDMMwDMMwDMMwDMMwDON38g/EFlrnObtdSQAAAABJRU5ErkJggg=="
+                alt="Foto de Cadastro">
+        </section>
+    </main>
+</body>
+
+</html>
