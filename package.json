@@ -1,0 +1,23 @@
+{
+  "name": "temp-gamer",
+  "version": "1.0.0",
+  "description": "Projeto Mentoria",
+  "main": "gamer.js",
+  "scripts": {
+    "test": "echo tests",
+    "sass": "node-sass -w sass -o css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mkacunha/temp-gamer.git"
+  },
+  "author": "Maiko Cunha",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mkacunha/temp-gamer/issues"
+  },
+  "homepage": "https://github.com/mkacunha/temp-gamer#readme",
+  "dependencies": {
+    "node-sass": "^4.8.3"
+  }
+}

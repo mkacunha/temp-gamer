@@ -6,46 +6,129 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="gamer.css" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/gamer.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/modal.css" />
+    <script src="./js/modal.js"></script>
 </head>
 
 <body>
-    <main class="container">
-        <section class="container-flex container-game">
-            <div class="item-game"></div>
-            <div class="item-game"></div>
-            <div class="item-game"></div>
-            <div class="item-game"></div>
-            <div class="item-game"></div>
-            <div class="item-game"></div>
-            <div class="item-game"></div>
-            <div class="item-game"></div>
+    <main class="gamer">
+        <h1>Level 1</h1>
+        <section class="gamer__content">
+            <div class="gamer__row">
+                <div class="gamer__item"></div>
+                <div class="gamer__item"></div>
+                <div class="gamer__item"></div>
+                <div class="gamer__item"></div>
+                <div class="gamer__item"></div>
+                <div class="gamer__item"></div>
+                <div class="gamer__item"></div>
+                <div class="gamer__item"></div>
+            </div>
+            <div class="gamer__row">
+                <div class="gamer__item"></div>
+                <div class="gamer__item"></div>
+                <div class="gamer__item"></div>
+                <div class="gamer__item"></div>
+                <div class="gamer__item"></div>
+                <div class="gamer__item"></div>
+                <div class="gamer__item"></div>
+                <div class="gamer__item"></div>
+            </div>
+            <div class="gamer__row">
+                <div class="gamer__item"></div>
+                <div class="gamer__item"></div>
+                <div class="gamer__item"></div>
+                <div class="gamer__item"></div>
+                <div class="gamer__item"></div>
+                <div class="gamer__item"></div>
+                <div class="gamer__item"></div>
+                <div class="gamer__item"></div>
+            </div>
+            <div class="gamer__row">
+                <div class="gamer__item"></div>
+                <div class="gamer__item"></div>
+                <div class="gamer__item"></div>
+                <div class="gamer__item"></div>
+                <div class="gamer__item"></div>
+                <div class="gamer__item"></div>
+                <div class="gamer__item"></div>
+                <div class="gamer__item"></div>
+            </div>
+            <div class="gamer__row">
+                <div class="gamer__item"></div>
+                <div class="gamer__item"></div>
+                <div class="gamer__item"></div>
+                <div class="gamer__item"></div>
+                <div class="gamer__item"></div>
+                <div class="gamer__item"></div>
+                <div class="gamer__item"></div>
+                <div class="gamer__item"></div>
+            </div>
+            <div class="gamer__row">
+                <div class="gamer__item"></div>
+                <div class="gamer__item"></div>
+                <div class="gamer__item"></div>
+                <div class="gamer__item"></div>
+                <div class="gamer__item"></div>
+                <div class="gamer__item"></div>
+                <div class="gamer__item"></div>
+                <div class="gamer__item"></div>
+            </div>
+            <div class="gamer__row">
+                <div class="gamer__item"></div>
+                <div class="gamer__item"></div>
+                <div class="gamer__item"></div>
+                <div class="gamer__item"></div>
+                <div class="gamer__item"></div>
+                <div class="gamer__item"></div>
+                <div class="gamer__item"></div>
+                <div class="gamer__item"></div>
+            </div>
+            <div class="gamer__row">
+                <div class="gamer__item"></div>
+                <div class="gamer__item"></div>
+                <div class="gamer__item"></div>
+                <div class="gamer__item"></div>
+                <div class="gamer__item"></div>
+                <div class="gamer__item"></div>
+                <div class="gamer__item"></div>
+                <div class="gamer__item"></div>
+            </div>
+            <div class="gamer__row">
+                <div class="gamer__item"></div>
+                <div class="gamer__item"></div>
+                <div class="gamer__item"></div>
+                <div class="gamer__item"></div>
+                <div class="gamer__item"></div>
+                <div class="gamer__item"></div>
+                <div class="gamer__item"></div>
+                <div class="gamer__item"></div>
+            </div>
+            <div class="gamer__row">
+                <div class="gamer__item"></div>
+                <div class="gamer__item"></div>
+                <div class="gamer__item"></div>
+                <div class="gamer__item"></div>
+                <div class="gamer__item"></div>
+                <div class="gamer__item"></div>
+                <div class="gamer__item"></div>
+                <div class="gamer__item"></div>
+            </div>
         </section>
 
-        <section class="container-flex container-buttons">
-            <button id="btn-modal" class="btn btn-color" type="submit" onclick="appGame.modalToggle()">Abrir Modal</button>
-        </section>
+        <button class="btn btn-color" type="submit" onclick="modal.toggle()">GO</button>
     </main>
 
-    <section id="modal" class="modal-container">
-        <div class="modal-opacity"></div>
-        <div class="modal-content">
-            <div class="modal-header">
-                <h2>Título</h2>
-            </div>
-            <div class="modal-body">
-                <h1>Conteúdo</h1>
-            </div>
-            <div class="modal-footer">
-                <button id="btn-modal-cancel" class="btn" type="submit" onclick="appGame.modalToggle()">Cancelar</button>
-                <button id="btn-modal-ok" class="btn btn-color" type="submit" onclick="appGame.modalToggle()">OK</button>
-            </div>
+    <section id="modal" class="modal">
+        <div class="modal__opacity" onclick="modal.toggle()"></div>
+        <div class="modal__content">
+            <h1>Parabéns</h1>
+            <h3>3000 pontos</h3>
+            <button id="btn-modal-cancel" class="btn" type="submit" onclick="modal.toggle()">OK</button>
         </div>
     </section>
-
-
-
-    <script src="gamer.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mentoria Gamer</title>
+
+    <link rel="stylesheet" href="./css/start.css">
+    <link rel="stylesheet" href="./css/modal.css">
+    <script src="./js/modal.js"></script>
+</head>
+
+<body>
+    <main class="start">
+
+        <section class="start__content start__item-width">
+            <h1>Mentoria Gamer</h1>
+            <h3>Última Pontuação</h3>
+            <h1>9999999</h1>
+            <h3>Ranking</h3>
+
+            <table style="width:100%">
+                <tr>
+                    <th>Posição</th>
+                    <th>Nome</th>
+                    <th>Quantidade de Pontos</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Maria</td>
+                    <td>110</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>João</td>
+                    <td>100</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>José</td>
+                    <td>90</td>
+                </tr>
+            </table>
+        </section>
+
+        <button class="start__button start__item-width" type="submit" onclick="modal.toggle()">START</button>
+    </main>
+
+    <section id="modal" class="modal">
+        <div class="modal__opacity" onclick="modal.toggle()"></div>
+        <div class="modal__content">
+            <section>
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" id="nome">
+            </section>
+
+            <section>
+                <label for="nivel">Nível</label>
+                <input type="radio" name="nivel" id="nivel" value="1">
+                <input type="radio" name="nivel" id="nivel" value="2">
+                <input type="radio" name="nivel" id="nivel" value="3">
+                <input type="radio" name="nivel" id="nivel" value="4">
+                <input type="radio" name="nivel" id="nivel" value="5">
+            </section>
+
+            <section>
+                <button type="submit" onclick="modal.toggle()">OK</button>
+            </section>
+        </div>
+    </section>
+</body>
+
+</html>
