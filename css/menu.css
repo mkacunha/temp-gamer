@@ -1,0 +1,92 @@
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  font-family: Arial, Helvetica, sans-serif; }
+  .menu a {
+    text-decoration: none; }
+  .menu__opacity {
+    position: fixed;
+    display: none;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    opacity: 0.1; }
+  .menu__divider {
+    border-bottom: 2px solid #152D50; }
+  .menu__nav {
+    background: #1F3A60;
+    color: #FFF;
+    width: 400px;
+    height: 100%; }
+    .menu__nav a {
+      color: #FFF; }
+    .menu__nav-header {
+      height: 170px;
+      display: grid;
+      grid-auto-rows: 10px 1fr 10px;
+      padding: 20px; }
+    .menu__nav-itens {
+      margin: 0;
+      padding: 0;
+      list-style-type: none; }
+      .menu__nav-itens li a:hover {
+        background: #152D50; }
+      .menu__nav-itens li a {
+        display: block;
+        padding: 20px; }
+      .menu__nav-itens ul li a {
+        padding-left: 40px; }
+    .menu__nav-sidebar {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between; }
+      .menu__nav-sidebar span {
+        display: block; }
+    .menu__nav-subitem {
+      display: none; }
+      .menu__nav-subitem_show {
+        display: block; }
+  .menu__logo {
+    justify-self: center;
+    align-self: center; }
+  .menu__user {
+    align-self: flex-start;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; }
+    .menu__user span {
+      display: block; }
+    .menu__user-options {
+      cursor: pointer; }
+  .menu__content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column; }
+  .menu__header {
+    width: 100%;
+    height: 75px; }
+  .menu__btn-nav {
+    display: none;
+    color: #FFF;
+    cursor: pointer; }
+
+@media all and (max-width: 1024px) {
+  .menu__opacity_show {
+    display: block; }
+  .menu__nav {
+    display: none; }
+    .menu__nav_show {
+      display: block;
+      position: absolute; }
+  .menu__btn-nav {
+    display: block; } }

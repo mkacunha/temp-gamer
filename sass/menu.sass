@@ -1,0 +1,94 @@
+.menu
+  position: fixed
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  display: flex
+  flex-direction: row 
+  font-family: Arial, Helvetica, sans-serif
+  & a 
+    text-decoration: none
+  &__opacity
+    position: fixed
+    display: none
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background: black
+    opacity: 0.1    
+  &__divider
+    border-bottom: 2px solid #152D50
+  &__nav
+    background:  #1F3A60
+    color: #FFF
+    width: 400px
+    height: 100%
+    & a
+      color: #FFF
+    &-header
+      height: 170px
+      display: grid
+      grid-auto-rows: 10px 1fr 10px      
+      padding: 20px
+    &-itens
+      margin: 0
+      padding: 0
+      list-style-type: none
+      & li a:hover
+        background: #152D50
+      & li a
+        display: block
+        padding: 20px
+      & ul li a
+        padding-left: 40px
+    &-sidebar
+      display: flex
+      flex-direction: row
+      justify-content: space-between
+      & span
+        display: block
+    &-subitem
+      display: none
+      &_show
+        display: block
+  &__logo
+    justify-self: center
+    align-self: center
+  &__user
+    align-self: flex-start
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    align-items: center
+    width: 100%
+    & span
+      display: block
+    &-options
+      cursor: pointer
+  &__content
+    width: 100%
+    height: 100%
+    display: flex
+    flex-direction: column
+  &__header
+    width: 100%
+    height: 75px
+  &__btn-nav
+    display: none
+    color: #FFF
+    cursor: pointer
+
+@media all and (max-width: 1024px)
+  .menu
+    &__opacity
+      &_show
+        display: block
+    &__nav
+      display: none      
+      &_show
+        display: block
+        position: absolute
+    &__btn-nav
+      display: block

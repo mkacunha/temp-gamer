@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Menu</title>
+
+    <link rel="stylesheet" href="./css/menu.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg"
+        crossorigin="anonymous">
+
+    <script src="./js/menu.js"></script>
+</head>
+
+<body>
+    <main class="menu">
+        <section id="menu__opacity" class="menu__opacity" onclick="menu.navToggle()">
+        </section>
+
+        <nav id="menu__nav" class="menu__nav">
+            <header class="menu__nav-header menu__divider">
+                <div>
+                    <a class="menu__btn-nav" onclick="menu.navToggle()">
+                        <span class="fas fa-align-justify"></span>
+                    </a>
+                </div>
+                <img class="menu__logo" src="./images/logo-cofre-virtual.svg" alt="Logo do Cofre Vortual">
+                <div class="menu__user">
+                    <span>Administrador</span>
+                    <span class="fas fa-angle-down menu__user-options" onclick="menu.menuUserToggle()"></span>
+                </div>
+            </header>
+
+            <ul class="menu__nav-itens">
+                <li>
+                    <a class="menu__divider" onclick="menu.submenuToggle('subitem-home')">
+                        <div class="menu__nav-sidebar">
+                            <span class="fas fa-home"></span>
+                            <span>Home</span>
+                            <span class="fas fa-angle-down"></span>
+                        </div>
+                    </a>
+                    <ul id="subitem-home" class="menu__nav-itens menu__nav-subitem">
+                        <li>
+                            <a class="menu__divider" href="">Opção 10</a>
+                        </li>
+                        <li>
+                            <a class="menu__divider" href="">Opção 20</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="menu__divider" href="">Opção 1</a>
+                </li>
+                <li>
+                    <a class="menu__divider" href="">Opção 2</a>
+                </li>
+                <li>
+                    <a class="menu__divider" href="">Opção 3</a>
+                </li>
+                <li>
+                    <a class="menu__divider" href="">Opção 4</a>
+                </li>
+            </ul>
+        </nav>
+
+        <section class="menu__content">
+            <header class="menu__header">
+                <a class="menu__btn-nav" onclick="menu.navToggle()">Show Menu</a>
+            </header>
+        </section>
+    </main>
+</body>
+
+</html>
