@@ -13,9 +13,9 @@
 </head>
 
 <body>
-    <main class="gamer">
+    <main id="state__in-game" class="gamer game-state">
         <h1>Level 1</h1>
-        <section class="gamer__content">
+        <section class="gamer__content game-state_in-game">
             <div class="gamer__row">
                 <div class="gamer__item"></div>
                 <div class="gamer__item"></div>
@@ -121,7 +121,7 @@
         <button class="btn btn-color" type="submit" onclick="modal.toggle()">GO</button>
     </main>
 
-    <section id="modal" class="modal">
+    <section id="modal" id="state__start" class="modal game-state_active">
         <div class="modal__opacity" onclick="modal.toggle()"></div>
         <div class="modal__content">
             <h1>Parabéns</h1>

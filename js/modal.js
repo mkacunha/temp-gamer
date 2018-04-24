@@ -1,16 +1,15 @@
-var modal = (function () {
+const modal = (function() {
+  const app = {};
 
-    var app = {};
+  app.init = function() {
+    console.log('Aplicação iniciada');
+  };
 
-    app.init = function () {
-        console.log('Aplicação iniciada');
-    }
+  app.toggle = function(modal) {
+    document.getElementById(modal).classList.toggle('modal__show');
+  };
 
-    app.toggle = function () {
-        document.getElementById('modal').classList.toggle('modal__show');
-    }
-
-    return app;
+  return app;
 })();
 
-window.onload = appGame.init;
+window.onload = modal.init;
