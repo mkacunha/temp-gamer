@@ -18,9 +18,9 @@
 <body>
     <section class="layout">
 
-        <section class="layout__override layout__override_show"></section>
+        <section id="menu-override" class="layout__override" onclick="menu.navToggle()"></section>
 
-        <nav class="layout__menu layout__menu_show">
+        <nav id="menu" class="layout__menu layout__menu_show">
             <header class="layout__menu-header layout__divider">
                 <div>
                     <a class="layout__cursor-pointer" onclick="menu.navToggle()">
@@ -30,39 +30,51 @@
                 <img class="layout__logo" src="./images/logo-cofre-virtual.svg" alt="Logo do Cofre Vortual">
                 <div class="layout__menu-user">
                     <span>Administrador</span>
-                    <div class="fas fa-angle-down layout__cursor-pointer" onclick="menu.menuUserToggle()"></div>
+                    <div class="fas fa-angle-down layout__cursor-pointer layout__menu-user-option" onclick="menu.menuUserToggle()">
+                        <ul id="menu-user-list" class="layout__menu-user-list">
+                            <li>
+                                <a class="layout__menu-user-list-item">Meus dados</a>
+                            </li>
+                            <li>
+                                <a class="layout__menu-user-list-item">Alterar senha</a>
+                            </li>
+                            <li>
+                                <a class="layout__menu-user-list-item">Sair</a>
+                        </ul>
+                    </div>
+                </div>
                 </div>
             </header>
 
             <ul class="layout__menu-list">
-                <li>
-                    <a class="layout__divider layout__menu-list-item">
+                <li id="menu-home">
+                    <a class="layout__divider layout__menu-list-item" onclick="menu.submenuToggle('menu-home')">
                         <div class="layout__menu-list-options">
                             <span class="fas fa-home"></span>
                             <span class="layout__menu-list-options-label">Home</span>
-                            <span class="fas fa-angle-down"></span>
+                            <span class="fas fa-angle-down layout__menu-list-options-arrow"></span>
                         </div>
                     </a>
-                    <ul class="layout__menu-list">
+                    <ul class="layout__menu-list  layout__menu-list-sub">
                         <li>
-                            <a class="layout__divider layout__menu-list-item layout__menu-list-item-sub" href="">Opção 10</a>
+                            <a class="layout__divider layout__menu-list-item layout__menu-list-item-sub">Opção 10</a>
                         </li>
                         <li>
-                            <a class="layout__divider layout__menu-list-item  layout__menu-list-item-sub" href="">Opção 20</a>
+                            <a class="layout__divider layout__menu-list-item  layout__menu-list-item-sub">Opção 20</a>
                         </li>
                     </ul>
                 </li>
                 <li>
-                    <a class="layout__divider layout__menu-list-item" href="">Opção 1</a>
-                </li> 
-                <li>
-                    <a class="layout__divider layout__menu-list-item" href="">Opção 2</a>
+                    <a class="layout__divider layout__menu-list-item">Opção 1</a>
                 </li>
                 <li>
-                    <a class="layout__divider layout__menu-list-item" href="">Opção 3</a>
+                    <a class="layout__divider layout__menu-list-item">Opção 2</a>
                 </li>
                 <li>
-                    <a class="layout__divider layout__menu-list-item" href="">Opção 4</a>
+                    <a class="layout__divider layout__menu-list-item">Opção 3</a>
+                </li>
+                <li>
+                    <a class="layout__divider layout__menu-list-item">Opção 4</a>
                 </li>
             </ul>
         </nav>
@@ -70,7 +82,7 @@
 
         <section class="layout__page">
             <header class="layout__header">
-                <a class="layout__cursor-pointer">
+                <a class="layout__cursor-pointer" onclick="menu.navToggle()">
                     <span class="fas fa-bars fa-2x"></span>
                 </a>
                 <h1 class="page__title">TELA INICIAL</h1>

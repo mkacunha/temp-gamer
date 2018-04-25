@@ -1,6 +1,8 @@
 @import ./mobileFirst
 
 $primary-color: #1F3A60
+$primary-color-dark: #152D50
+
 
 body
   font-family: 'Lato', Calibri, Arial
@@ -8,6 +10,7 @@ body
   &__cursor-pointer
     cursor: pointer
   &__override
+    display: none
     position: fixed
     top: 0
     left: 0
@@ -18,6 +21,7 @@ body
     &_show
       display: block
   &__menu
+    display: none
     width: 400px
     height: 100%
     background: $primary-color
@@ -28,7 +32,7 @@ body
       top: 0
       left: 0
   &__divider
-    border-bottom: 2px solid #152D50
+    border-bottom: 2px solid $primary-color-dark
   &__menu-header
       height: 170px
       display: grid
@@ -38,6 +42,26 @@ body
     display: flex
     flex-direction: row
     justify-content: space-between
+    &-option
+      position: relative
+  &__menu-user-list
+    display: none
+    position: absolute
+    min-width: 150px
+    background: #FFF
+    border: solid 1px #DEDEDE
+    border-radius: 5px
+    padding: 0
+    margin: 0
+    list-style-type: none
+    &_show
+      display: block
+    &-item
+      text-decoration: none
+      display: block
+      color: $primary-color
+      padding: 5px 10px
+      font-weight: 500
   &__menu-list
     list-style-type: none
     margin: 0
@@ -53,9 +77,16 @@ body
       display: block
       padding: 20px
       color: #FFF
-      text-decoration: none  
+      text-decoration: none
+      cursor: pointer
+      &:hover
+        background: $primary-color-dark
     &-item-sub
-      padding-left: 50px  
+      padding-left: 50px
+  &__menu-list-sub
+    display: none
+    &_show
+      display: block
   &__logo
     justify-self: center
     align-self: center
@@ -64,7 +95,7 @@ body
     flex-direction: column
   &__header
     width: 100%
-    height: 90px
+    height: 70px
     border-bottom: solid 2px $primary-color
     display: flex
     flex-direction: row
