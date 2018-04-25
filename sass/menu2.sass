@@ -1,0 +1,76 @@
+@import ./mobileFirst
+
+$primary-color: #1F3A60
+
+body
+  font-family: 'Lato', Calibri, Arial
+.layout
+  &__cursor-pointer
+    cursor: pointer
+  &__override
+    position: fixed
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background: black
+    opacity: 0.2
+    &_show
+      display: block
+  &__menu
+    width: 400px
+    height: 100%
+    background: $primary-color
+    color: #FFF
+    &_show
+      display: block
+      position: absolute
+      top: 0
+      left: 0
+  &__divider
+    border-bottom: 2px solid #152D50
+  &__menu-header
+      height: 170px
+      display: grid
+      grid-auto-rows: 10px 1fr 10px
+      padding: 20px
+  &__menu-user
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+  &__menu-list
+    list-style-type: none
+    margin: 0
+    padding: 0
+    &-options
+      display: flex
+      flex-direction: row
+      justify-content: space-between
+      &-label
+        flex: 1
+        margin-left: 10px
+    &-item
+      display: block
+      padding: 20px
+      color: #FFF
+      text-decoration: none  
+    &-item-sub
+      padding-left: 50px  
+  &__logo
+    justify-self: center
+    align-self: center
+  &__page
+    display: flex
+    flex-direction: column
+  &__header
+    width: 100%
+    height: 90px
+    border-bottom: solid 2px $primary-color
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    align-items: center
+    padding: 0 10px
+    color: $primary-color
+  &__content
+    width: 100%

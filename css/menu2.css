@@ -1,0 +1,93 @@
+/* MOBILE FIRST */
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+/* Small devices (tablets, 768px and up) */
+/* Medium devices (desktops, 992px and up) */
+/* Large devices (large desktops, 1200px and up) */
+/* SPECIFIC */
+/* ONLY Extra Small devices (767px and down) */
+/* ONLY Small devices (between 768px and 991) */
+/* ONLY Medium devices (between 992 and 1199) */
+/* ONLY Medium devices (1200 and up) */
+body {
+  font-family: 'Lato', Calibri, Arial; }
+
+.layout__cursor-pointer {
+  cursor: pointer; }
+
+.layout__override {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  opacity: 0.2; }
+  .layout__override_show {
+    display: block; }
+
+.layout__menu {
+  width: 400px;
+  height: 100%;
+  background: #1F3A60;
+  color: #FFF; }
+  .layout__menu_show {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0; }
+
+.layout__divider {
+  border-bottom: 2px solid #152D50; }
+
+.layout__menu-header {
+  height: 170px;
+  display: grid;
+  grid-auto-rows: 10px 1fr 10px;
+  padding: 20px; }
+
+.layout__menu-user {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+
+.layout__menu-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0; }
+  .layout__menu-list-options {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+    .layout__menu-list-options-label {
+      flex: 1;
+      margin-left: 10px; }
+  .layout__menu-list-item {
+    display: block;
+    padding: 20px;
+    color: #FFF;
+    text-decoration: none; }
+  .layout__menu-list-item-sub {
+    padding-left: 50px; }
+
+.layout__logo {
+  justify-self: center;
+  align-self: center; }
+
+.layout__page {
+  display: flex;
+  flex-direction: column; }
+
+.layout__header {
+  width: 100%;
+  height: 90px;
+  border-bottom: solid 2px #1F3A60;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+  color: #1F3A60; }
+
+.layout__content {
+  width: 100%; }
