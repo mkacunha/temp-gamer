@@ -12,6 +12,9 @@ const menu = (function() {
     document
       .getElementById('menu-user-list')
       .classList.toggle('layout__menu-user-list_show');
+    document
+      .getElementById('menu-user-override')
+      .classList.toggle('layout__menu-user-override_show');
   };
 
   app.submenuToggle = function(id) {

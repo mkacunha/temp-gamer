@@ -20,16 +20,17 @@
 
         <section id="menu-override" class="layout__override" onclick="menu.navToggle()"></section>
 
-        <nav id="menu" class="layout__menu layout__menu_show">
+        <nav id="menu" class="layout__menu">
             <header class="layout__menu-header layout__divider">
                 <div>
-                    <a class="layout__cursor-pointer" onclick="menu.navToggle()">
+                    <a class="layout__menu-toggle layout__cursor-pointer" onclick="menu.navToggle()">
                         <span class="fas fa-bars fa-2x"></span>
                     </a>
                 </div>
                 <img class="layout__logo" src="./images/logo-cofre-virtual.svg" alt="Logo do Cofre Vortual">
                 <div class="layout__menu-user">
                     <span>Administrador</span>
+                    <div id="menu-user-override" class="layout__menu-user-override" onclick="menu.menuUserToggle()"></div>
                     <div class="fas fa-angle-down layout__cursor-pointer layout__menu-user-option" onclick="menu.menuUserToggle()">
                         <ul id="menu-user-list" class="layout__menu-user-list">
                             <li>
