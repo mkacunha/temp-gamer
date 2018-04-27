@@ -2,16 +2,22 @@
 
 $primary-color: #1F3A60
 $primary-color-dark: #152D50
+ 
+*
+  box-sizing: border-box
 
+a 
+  cursor: pointer
+
+html, body
+  height: 100%
 
 body
   font-family: 'Lato', Calibri, Arial
+
 .layout
-  +media-min-md()
-    display: flex
-    flex-direction: row
-  &__cursor-pointer
-    cursor: pointer
+  display: flex
+  height: 100%
   &__override
     display: none
     position: fixed
@@ -25,17 +31,22 @@ body
       display: block
     +media-min-md()
       display: none
+      
   &__menu
-    display: none
-    width: 400px
+    display: flex
+    flex-direction: column
+    width: 0
     height: 100%
     background: $primary-color
     color: #FFF
+    overflow: hidden
+    transition: width .25s ease
+    position: absolute
+    top: 0
+    left: 0
     &_show
-      display: block
-      position: absolute
-      top: 0
-      left: 0
+      width: 400px
+      overflow: visible
     +media-min-md()
       display: block
       &_show
@@ -87,6 +98,7 @@ body
     list-style-type: none
     margin: 0
     padding: 0
+    overflow: auto
     &-options
       display: flex
       flex-direction: row
@@ -111,19 +123,22 @@ body
   &__logo
     justify-self: center
     align-self: center
-  &__page
-    display: flex
-    flex-direction: column
-    width: 100%
-  &__header
-    width: 100%
-    height: 70px
-    border-bottom: solid 2px $primary-color
-    display: flex
-    flex-direction: row
-    justify-content: space-between
-    align-items: center
-    padding: 0 10px
-    color: $primary-color
-  &__content
-    width: 100%
+
+.page
+  display: flex
+  flex-direction: column
+  width: 100%
+
+.header
+  width: 100%
+  height: 70px
+  border-bottom: solid 2px $primary-color
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  align-items: center
+  padding: 0 10px
+  color: $primary-color
+
+.content
+  width: 100%
