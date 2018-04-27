@@ -2,7 +2,9 @@ const menu = (function() {
   const app = {};
 
   app.navToggle = function() {
-    document.getElementById('menu').classList.toggle('layout__menu_show');
+    const menu = document.getElementById('menu');
+    menu.classList.toggle('menu_show');
+    menu.classList.toggle('menu_hide');
     document
       .getElementById('menu-override')
       .classList.toggle('layout__override_show');
