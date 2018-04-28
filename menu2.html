@@ -18,64 +18,64 @@
 <body>
     <section class="layout">
 
-        <section id="menu-override" class="layout__override" onclick="menu.navToggle()"></section>
+        <section id="menu-override" class="menu__override" onclick="menu.navToggleShow()"></section>
 
         <nav id="menu" class="menu">
-            <header class="layout__menu-header layout__divider">
+            <header class="menu-header divider">
                 <div>
-                    <a class="menu-toggle" onclick="menu.navToggle()">
+                    <a class="menu__btn-show" onclick="menu.navToggleShow()">
                         <span class="fas fa-bars fa-2x"></span>
                     </a>
                 </div>
-                <img class="layout__logo" src="./images/logo-cofre-virtual.svg" alt="Logo do Cofre Vortual">
-                <div class="layout__menu-user">
+                <img class="menu-header__logo" src="./images/logo-cofre-virtual.svg" alt="Logo do Cofre Vortual">
+                <div class="menu-user">
                     <span>Administrador</span>
-                    <div id="menu-user-override" class="layout__menu-user-override" onclick="menu.menuUserToggle()"></div>
-                    <div class="fas fa-angle-down layout__menu-user-option" onclick="menu.menuUserToggle()">
-                        <ul id="menu-user-list" class="layout__menu-user-list">
+                    <div id="menu-user__override" class="menu-user-override" onclick="menu.menuUserToggle()"></div>
+                    <div class="fas fa-angle-down menu-user__option" onclick="menu.menuUserToggle()">
+                        <ul id="menu-user-list" class="menu-user-list">
                             <li>
-                                <a class="layout__menu-user-list-item">Meus dados</a>
+                                <a class="menu-user-list__item">Meus dados</a>
                             </li>
                             <li>
-                                <a class="layout__menu-user-list-item">Alterar senha</a>
+                                <a class="menu-user-list__item">Alterar senha</a>
                             </li>
                             <li>
-                                <a class="layout__menu-user-list-item">Sair</a>
+                                <a class="menu-user-list__item">Sair</a>
                         </ul>
                     </div>
                 </div>
                 </div>
             </header>
 
-            <ul class="layout__menu-list">
+            <ul class="menu-list">
                 <li id="menu-home">
-                    <a class="layout__divider layout__menu-list-item" onclick="menu.submenuToggle('menu-home')">
-                        <div class="layout__menu-list-options">
+                    <a class="divider menu-list__item" onclick="menu.submenuToggle('menu-home')">
+                        <div class="menu-list__options">
                             <span class="fas fa-home"></span>
-                            <span class="layout__menu-list-options-label">Home</span>
-                            <span class="fas fa-angle-down layout__menu-list-options-arrow"></span>
+                            <span class="menu-list__options-label">Home</span>
+                            <span class="fas fa-angle-down menu-list__options-arrow"></span>
                         </div>
                     </a>
-                    <ul class="layout__menu-list  layout__menu-list-sub">
+                    <ul class="menu-list menu-list__sub">
                         <li>
-                            <a class="layout__divider layout__menu-list-item layout__menu-list-item-sub">Opção 10</a>
+                            <a class="divider menu-list__item menu-list__item-sub">Opção 10</a>
                         </li>
                         <li>
-                            <a class="layout__divider layout__menu-list-item  layout__menu-list-item-sub">Opção 20</a>
+                            <a class="divider menu-list__item menu-list__item-sub">Opção 20</a>
                         </li>
                     </ul>
                 </li>
                 <li>
-                    <a class="layout__divider layout__menu-list-item">Opção 1</a>
+                    <a class="divider menu-list__item">Opção 1</a>
                 </li>
                 <li>
-                    <a class="layout__divider layout__menu-list-item">Opção 2</a>
+                    <a class="divider menu-list__item">Opção 2</a>
                 </li>
                 <li>
-                    <a class="layout__divider layout__menu-list-item">Opção 3</a>
+                    <a class="divider menu-list__item">Opção 3</a>
                 </li>
                 <li>
-                    <a class="layout__divider layout__menu-list-item">Opção 4</a>
+                    <a class="divider menu-list__item">Opção 4</a>
                 </li>
             </ul>
         </nav>
@@ -83,7 +83,10 @@
 
         <section class="page">
             <header class="header">
-                <a onclick="menu.navToggle()">
+                <a class="menu__btn-show" onclick="menu.navToggleShow()">
+                    <span class="fas fa-bars fa-2x"></span>
+                </a>
+                <a class="menu__btn-hide" onclick="menu.navToggleHide()">
                     <span class="fas fa-bars fa-2x"></span>
                 </a>
                 <h1>TELA INICIAL</h1>
